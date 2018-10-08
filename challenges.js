@@ -155,8 +155,8 @@ Test case:
 [kayak, reviver, racecar, reader, madam] is false
 ------------------*/
 
-const wordList1 = [deified, civic, radar, level, rotor];
-const wordList2 = [kayak, reviver, racecar, reader, madam];
+const wordList1 = ["deified", "civic", "radar", "level", "rotor"];
+const wordList2 = ["kayak", "reviver", "racecar", "reader", "madam"];
 
 function checkPalindromes(list) {
   return list.every(() => {
