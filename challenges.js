@@ -79,7 +79,7 @@ console.log(every([1, 3, 5], n => n < 6)); // true
 console.log(every([2, 4, 6], n => n < 6)); // false
 ------------------*/
 
-function every(array, cbt) {
+function every(array, cb) {
   // your code here.
 }
 
