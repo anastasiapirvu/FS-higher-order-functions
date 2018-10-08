@@ -77,6 +77,7 @@ Otherwise, it returns false. Try writing it!
 Test cases:
 console.log(every([1, 3, 5], n => n < 6)); // true
 console.log(every([2, 4, 6], n => n < 6)); // false
+console.log(every([2, 4, 6, 2], n => n < 6)); // false
 ------------------*/
 
 function every(array, cb) {
@@ -91,18 +92,19 @@ these methods exist on the JavaScript Array
 prototype already, however. 
 
 For this question, use the native
-forEach method to print all of the items
+forEach method to add all of the items
 in the nums array. Use a fat arrow function.
 The code has been started for you.
 ------------------*/
 
 const nums = [1, 2, 3, 4, 5, 6, 7, 8];
+let sum = 0;
 
-const printNums = nums.forEach(e => {
+nums.forEach(e => {
   // your code here
 });
 
-// console.log(printNums);
+// console.log(sum);
 
 /*------------------
 6)
@@ -151,8 +153,8 @@ to you is wrapped in another function. This is to
 make testing multiple cases easier. :)
 
 Test case:
-[deified, civic, radar, level, rotor] is true
-[kayak, reviver, racecar, reader, madam] is false
+["deified", "civic", "radar", "level", "rotor"] is true
+["kayak", "reviver", "racecar", "reader", "madam"] is false
 ------------------*/
 
 const wordList1 = ["deified", "civic", "radar", "level", "rotor"];
