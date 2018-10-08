@@ -30,3 +30,6 @@ Complete all of the questions in the `challenges.js` file.
 
 ## Resources
   - [https://eloquentjavascript.net/05_higher_order.html](https://eloquentjavascript.net/05_higher_order.html)
+
+## Notes
+_This is a student project that was created at [Codely](http://codely.tech), a full stack development bootcamp in Barcelona._
