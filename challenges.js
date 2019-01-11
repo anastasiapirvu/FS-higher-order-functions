@@ -10,7 +10,7 @@ apply the function to every
 element in the array.
 
 Test cases:
-forEach(["a", "b", "c"], e => {console.log(3)}); // a b c
+forEach(["a", "b", "c"], e => {console.log(e)}); // a b c
 ------------------*/
 
 function forEach(arr, cb) {
@@ -70,7 +70,7 @@ callback function.
 The "every" function is similar to
 "filter" in that the callback function
 is a test. However, the "every" function
-returns true or false if EVERY element
+returns true if EVERY element
 in the passed in array passes that test. 
 Otherwise, it returns false. Try writing it!
 
