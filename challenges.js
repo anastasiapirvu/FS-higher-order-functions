@@ -10,12 +10,17 @@ apply the function to every
 element in the array.
 
 Test cases:
-forEach(["a", "b", "c"], e => {console.log(e)}); // a b c
+
 ------------------*/
 
 function forEach(arr, cb) {
-  // your code here
+
+  let newarr = ();
+  for (let elem of arr) {
+    let eachElem = cb(elem);
+  }
 }
+forEach(["a", "b", "c"], e => {console.log(e)}); // a b c
 
 /*------------------
 2)
@@ -36,8 +41,17 @@ console.log(map([5, 6, 7], e => e * 2)); // [10, 12, 14]
 ------------------*/
 
 function map(arr, cb) {
-  // your code here
+  //Initialization
+  let newarr = [] ;
+
+  //loop over every array element
+  for (let elem of arr){
+    let mappedElem = cb(elem);
+    newarr.push(mappedElem);
+  }
+  return newarr;
 }
+console.log(map([5, 6, 7], e => e * 2));
 
 /*------------------
 3)
@@ -117,9 +131,9 @@ Test case:
 
 const names = ["Sofia", "Pedro", "Mia"];
 
-// const greetings = // your code here
+const greetings = names.map(n => `Howdy, ${n}!`);
 
-// console.log(greetings);
+console.log(greetings);
 
 /*------------------
 6.2)
