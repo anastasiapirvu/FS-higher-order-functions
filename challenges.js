@@ -13,14 +13,12 @@ Test cases:
 
 ------------------*/
 
-function forEach(arr, cb) {
-
-  let newarr = ();
-  for (let elem of arr) {
-    let eachElem = cb(elem);
-  }
-}
-forEach(["a", "b", "c"], e => {console.log(e)}); // a b c
+// function forEach(arr,cb) {
+//   for (let elem of arr) {
+//     cb(elem);
+//   }
+// }
+// forEach(["a", "b", "c"], e => {console.log(e)}); // a b c
 
 /*------------------
 2)
@@ -40,18 +38,18 @@ Test cases:
 console.log(map([5, 6, 7], e => e * 2)); // [10, 12, 14]
 ------------------*/
 
-function map(arr, cb) {
-  //Initialization
-  let newarr = [] ;
+// function map(arr, cb) {
+//   //Initialization
+//   let newarr = [] ;
 
-  //loop over every array element
-  for (let elem of arr){
-    let mappedElem = cb(elem);
-    newarr.push(mappedElem);
-  }
-  return newarr;
-}
-console.log(map([5, 6, 7], e => e * 2));
+//   //loop over every array element
+//   for (let elem of arr){
+//     let mappedElem = cb(elem);
+//     newarr.push(mappedElem);
+//   }
+//   return newarr;
+// }
+// console.log(map([5, 6, 7], e => e * 2));
 
 /*------------------
 3)
@@ -66,13 +64,17 @@ the items that have passed
 the callback function (ie: the callback
 will return true or false for each item).
 
-Test cases:
-console.log(filter([5, 6, 7, 8], e => e % 2 === 0 ? true : false)); // [6, 8]
-------------------*/
 
-function filter(arr, cb) {
-  // your code here
-}
+------------------*/
+// let even = [];
+
+// function filter(arr, cb) {
+//   for (arr in even) {
+//     return ;
+// }}
+
+// //Test cases:
+// console.log(filter([5, 6, 7, 8], e => e % 2 === 0 ? true : false)); // [6, 8]
 
 /*------------------
 4)
@@ -88,15 +90,17 @@ returns true if EVERY element
 in the passed in array passes that test. 
 Otherwise, it returns false. Try writing it!
 
-Test cases:
-console.log(every([1, 3, 5], n => n < 6)); // true
-console.log(every([2, 4, 6], n => n < 6)); // false
-console.log(every([2, 4, 6, 2], n => n < 6)); // false
+
 ------------------*/
 
-function every(array, cb) {
-  // your code here.
-}
+// function every(array, cb) {
+  
+// }
+
+// //Test cases:
+// console.log(every([1, 3, 5], n => n < 6)); // true
+// console.log(every([2, 4, 6], n => n < 6)); // false
+// console.log(every([2, 4, 6, 2], n => n < 6)); // false
 
 /*------------------
 5)
@@ -111,12 +115,12 @@ in the nums array. Use a fat arrow function.
 The code has been started for you.
 ------------------*/
 
-const nums = [1, 2, 3, 4, 5, 6, 7, 8];
-let sum = 0;
+// const nums = [1, 2, 3, 4, 5, 6, 7, 8];
+// let sum = 0;
 
-nums.forEach((e) => {
-  // your code here
-});
+// nums.forEach((e) => {
+//   sum += e
+// });
 
 // console.log(sum);
 
@@ -129,26 +133,26 @@ Test case:
 ["Sofia", "Pedro", "Mia"] to ["Hello, Sofia!", "Hello, Pedro!", "Hello, Mia!"]
 ------------------*/
 
-const names = ["Sofia", "Pedro", "Mia"];
+// const names = ["Sofia", "Pedro", "Mia"];
 
-const greetings = names.map(n => `Howdy, ${n}!`);
+// const greetings = names.map(n => `Howdy, ${n}!`);
 
-console.log(greetings);
+// console.log(greetings);
 
 /*------------------
 6.2)
 Use the map method to create a duplicate of an array.
 Write this in the shorter possible way you can.
-
 Test case:
 ["JavaScript", "Python", "Go"] to ["JavaScript", "Python", "Go"]
+
 ------------------*/
 
 const langs = ["JavaScript", "Python", "Go"];
 
-// const duplicate = // your code here
+const duplicate = langs.map(l=>`${langs}`);
 
-// console.log(duplicate);
+console.log(duplicate);
 
 /*------------------
 6.3)
